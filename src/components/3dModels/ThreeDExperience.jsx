@@ -1,6 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
+import { Logo } from './Logo.jsx';
 
 const ThreeDExperience = () => {
     const isMobile = useMediaQuery({ query: '(max-width: 768px)'}); // Adjust the breakpoint as needed
@@ -15,10 +16,7 @@ const ThreeDExperience = () => {
             minDistance={5}
             minPolarAngle={Math.PI / 5}
             maxPolarAngle={Math.PI / 2}/>
-        <mesh>
-          <boxGeometry args={[1, 1, 1]} />
-          <meshStandardMaterial color="teal" />
-        </mesh>
+        <Logo />
       </Canvas>
     );
 }

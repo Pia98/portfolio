@@ -6,14 +6,14 @@ Command: npx gltfjsx@6.5.3 Logo.glb
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/Logo.glb')
+export function Logo(props) {
+  const { nodes, materials } = useGLTF('/models/mine/Logo.glb')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Curve001.geometry} material={materials['SVGMat.002']} />
-      <mesh geometry={nodes.Curve002.geometry} material={materials['SVGMat.003']} />
+      <mesh geometry={nodes.Curve001.geometry} material={materials['SVGMat.002']} position={[-0.281, -0.172, 0]} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh geometry={nodes.Curve002.geometry} material={materials['SVGMat.003']} position={[-0.281, -0.172, 0]} rotation={[Math.PI / 2, 0, 0]} />
     </group>
   )
 }
 
-useGLTF.preload('/Logo.glb')
+useGLTF.preload('/models/mine/Logo.glb')
