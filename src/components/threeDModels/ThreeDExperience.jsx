@@ -7,7 +7,7 @@ import ThreeDLights from "./ThreeDLights.jsx";
 const ThreeDExperience = () => {
     const isMobile = useMediaQuery({ query: '(max-width: 768px)'}); // Adjust the breakpoint as needed
     return (
-     <Canvas camera={{ position: [0, 0, 2], fov: 45 }}>
+     <Canvas camera={{ position: [0, 0, 2], fov: 45 }} id="LogoCanvas">
         <ThreeDLights />
         <directionalLight position={[-5,5,-2]} intensity={1} color="#97BCFF" />
         <OrbitControls
