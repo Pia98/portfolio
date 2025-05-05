@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import "tailwindcss";
+
+html, body {
+    width: 100vw;
+    background-color: var(--color-dark-blue);
+    color: var(--white);
+}
+
+@theme {
+    --font-sans: Inter, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+    --font-heading: Oswald, Inter, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+
+    --white: #ffffff;
+  
+    --black: #181818;
+  
+    --purple: #B799FF;
+    --grey: #626272;
+    --color-dark-blue: #000030;
+    --primary: #97BCFF;
+    --secondary: #9DFBFF;
+
+    --color-mint-500: oklch(0.72 0.11 178);
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .flex-col-center {
+        @apply flex flex-col justify-center items-center;
+    }
+}
+
+@layer components {
+    .header-layout {
+        @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    }
+
+    .header-text {
+        @apply flex flex-col justify-center md:text-[60px] text-[30px] font-heading font-semibold relative z-10 pointer-events-none;
+        img {
+          @apply size-8 md:size-10 object-contain;
+        }
+        .slide {
+          @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
+        }
+      }
+
+      .cta-wrapper {
+        @apply relative z-20 cursor-pointer;
+      }
+
+      .header-3d-layout {
+        @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+      }
+      
+  .cta-button {
+    @apply px-4 py-4 rounded-lg bg-dark-blue flex justify-center items-center relative cursor-pointer overflow-hidden;
+
+    .bg-circle {
+      @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
+        w-[120%] h-[120%] group-hover:size-10 group-hover:right-10
+        rounded-full bg-white transition-all duration-500;
+    }
+
+    .text {
+      @apply uppercase md:text-lg text-black transition-all duration-500
+        group-hover:text-white group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+    }
+
+    .arrow-wrapper {
+      @apply group-hover:bg-white size-10 rounded-full absolute right-10 top-1/2 
+        -translate-y-1/2 flex justify-center items-center overflow-hidden;
+
+      img {
+        @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
+      }
+    }
+}
+}
