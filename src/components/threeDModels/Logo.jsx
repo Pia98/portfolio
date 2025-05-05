@@ -6,33 +6,13 @@ Command: npx gltfjsx@6.5.3 Logo.glb
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 import * as THREE from 'three';
-import { useFrame } from "@react-three/fiber";
- import fragmentShader from './shaders/fragment.glsl.js';
 
 export function Logo(props) {
-
-  const uniforms = {
-    iTime: { value: 0 },
-    iResolution:  { value: new THREE.Vector3() },
-  };
-
-  const shaderMaterial = new THREE.ShaderMaterial({
-    fragmentShader: fragmentShader,
-    uniforms: uniforms,
-  });
-  // materials['SVGMat.002']
-
-  useFrame(() => {
-    uniforms.iTime.value += 0.01;
-
-    const canvas = document.getElementById('LogoCanvas');
-    uniforms.iResolution.value.set(canvas.clientWidth, canvas.clientHeight, 1);
-  });
 
   const { nodes, materials } = useGLTF('/models/mine/Logo.glb')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Curve001.geometry} material={shaderMaterial} position={[-0.5, -0.75, 0]} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh geometry={nodes.Curve001.geometry} material={materials['SVGMat.002']} position={[-0.5, -0.75, 0]} rotation={[Math.PI / 2, 0, 0]} />
       <mesh geometry={nodes.Curve002.geometry} material={materials['SVGMat.003']} position={[-0.5, -0.75, 0]} rotation={[Math.PI / 2, 0, 0]} />
     </group>
   )
