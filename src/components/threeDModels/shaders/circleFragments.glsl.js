@@ -22,25 +22,25 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     // first 5-cable
     for(float i = .0; i < 5.; i++) {
           // Sinuswelle definieren
-        float xTrans = 1./9. * i; // sin(iTime*.25)*0.5;
-        float wave = xTrans + clamp(smoothstep(0.001, 0.025, 0.02 * sin(uv.y*2. + iTime * .5)), .0, .5) + .9;
+        float xTrans = 1./13. * i; // sin(iTime*.25)*0.5;
+        float wave = xTrans + clamp(smoothstep(0.001, 0.025, 0.02 * sin(uv.y*3.5 - iTime*.25 )), .0, .2) + 2.;
         //float wave = xTrans + step(0.001, sin(uv.x*0.25 + iTime * .5)/2.);
 
         // first 5-cableset
-        float waveWidth = 0.05;
+        float waveWidth = 0.03;
         float dist = abs(uv.x - wave);
         float waveMask = smoothstep(waveWidth, 0.0, dist);
         
         if(dist < waveWidth) {
-            vec3 waveColor = vec3(.0,.0,.15);
+            vec3 waveColor = vec3(.0,.0,.08);
 
             // Endfarbe
             color += waveColor;
         }
         
         //second cableset
-        wave -=.03;
-        waveWidth = 0.005;
+        wave -=.015;
+        waveWidth = 0.0025;
         dist = abs(uv.x - wave);
         
         if(dist < waveWidth) {
@@ -50,7 +50,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             color += waveColor;
         }
         
-        //third cableset  
+        //third cableset
         wave -=1.;
         waveWidth = 0.005;
         dist = abs(uv.x - wave);
@@ -65,6 +65,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     
     fragColor = vec4(color, 1.0);
 }
+
 
 void main() {
 

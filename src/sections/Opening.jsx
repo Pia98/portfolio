@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { use } from 'react';
 import Typewriter from 'typewriter-effect';
 import { heading_texts } from '../constants/index.js';
 import FancyButton from '../components/FancyButton.jsx';
 import ThreeDExperience from '../components/threeDModels/ThreeDExperience.jsx';
+import { useGSAP } from '@gsap/react';
+import  gsap  from 'gsap';
 
 const Opening = () => {
+    useGSAP(() => {
+        gsap.fromTo('.anim-text', 
+            { opacity: 0, y: 50 }, 
+            { opacity: 1,
+                y: 0, 
+                stagger: .2, 
+                duration: .75,
+                ease: 'power2.inOut'});
+    });
     return (
         <section id="opening" className='relative overflow-hidden'>
             <div className='absolute top-0 left-0 z-10'>
@@ -25,16 +36,16 @@ const Opening = () => {
                                 delay: 40
                               }}/>
                         </div>
-                        <p className='text-white md:text-xl relative z-10 pointer-events-none'>
+                        <p className='text-white md:text-xl relative z-10 pointer-events-none anim-text'>
                             I am a frontend web developer based in Augsburg, Germany.
                             I am always eager to learn new technologies and improve my skills.
                             I am looking for a team where I can contribute my knowledge and grow as a developer.
                         </p>
                         <FancyButton
-                        className='md:w-80 md:h-16 w-60 h-12'
+                        className='md:w-80 md:h-16 w-60 h-12 anim-text'
                         id="button"
                         text='Let’s connect!'
-                        onClick={() => window.open('mailto:pia.probst@online.de')}/>	
+                        targetId='showcase'/>	
                     </div>
                 </header>
                 {/* right: 3d model */} 
