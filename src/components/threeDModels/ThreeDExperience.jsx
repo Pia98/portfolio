@@ -18,7 +18,7 @@ const ThreeDExperience = () => {
       <directionalLight position={[-5, 5, -2]} intensity={1} color="#97BCFF" />
       <OrbitControls
         enablePan={false}
-        enableZoom={!isMobile}
+        enableZoom={false}
         maxDistance={3}
         minDistance={1.5}
         minPolarAngle={Math.PI / 5}

@@ -44,7 +44,7 @@ const Opening = () => {
                         <FancyButton
                         className='md:w-80 md:h-16 w-60 h-12 anim-text'
                         id="button"
-                        text='Let’s connect!'
+                        text='See more!'
                         targetId='showcase'/>	
                     </div>
                 </header>

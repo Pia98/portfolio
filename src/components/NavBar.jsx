@@ -18,13 +18,14 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <a className="logo" href="#opening">
+        <a className="logo flex flex-row items-center gap-1" href="#opening">
           <img
             alt="Pias logo"
             src="/projectImages/Logo.svg"
             width="48"
             height="48"
           />
+          ia Carola Probst
         </a>
 
         <nav className="desktop">
