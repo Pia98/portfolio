@@ -8,11 +8,19 @@ import { useRef } from 'react';
 export function Logo(props) {
   const meshRef = useRef();
 
+   const uniforms = {
+      iTime: { value: 0 },
+      iResolution:  { value: new THREE.Vector3() },
+    };
+
     useFrame(() => {
+      uniforms.iTime.value += 0.01;
     
       if (meshRef.current) {
-          // An Kamera kleben
-          meshRef.current.rotation.y += 0.01;
+
+          const positionOffset = Math.sin(uniforms.iTime.value*2.)* 0.002;
+          //Hovering in the air
+          meshRef.current.position.y += positionOffset;
         }
     });
 
