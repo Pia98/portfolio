@@ -10,9 +10,9 @@ export const heading_texts = [
 ];
 
 export const navLinks = [
-    { name: 'Projects', link: '#showcase' },
-    { name: 'Experience', link: '#experience' },
-    { name: 'Skills', link: '#skills' }
+    { name: 'Projects', targetId: 'showcase' },
+    { name: 'Experience', targetId: 'experience' },
+    { name: 'Skills', targetId: 'skills' }
 ];
 
 export const logoIconsList = [
