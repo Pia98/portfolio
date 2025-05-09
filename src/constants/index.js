@@ -3,13 +3,14 @@
 export const heading_texts = [
   "Hi, I'm Pia.",
   "Nice to meet you!",
-  "Please, let me introduce myself briefly.",
+  "Please, let me introduce myself.",
   "I am a frontend web developer.",
-  "I love to use my creativity and skills to create innovative projects.",
+  "I love to create innovative projects.",
   "Maybe, I am your next team member?",
 ];
 
 export const navLinks = [
+  { name: "Education", targetId: "education" },
   { name: "Projects", targetId: "showcase" },
   { name: "Experience", targetId: "experience" },
   { name: "Skills", targetId: "skills" },
@@ -27,24 +28,30 @@ export const logoIconsList = [
   { imgPath: "/images/logos/company-logo-9.png" },
 ];
 
-export const abilities = [
+export const schools = [
   {
-    imgPath: "/images/seo.png",
+    imgPath: "/logos/tha.png",
     title: "University of Applied Sciences Augsburg",
     desc: "Master Interactive Media Systems with focus on Animation and Interaction Research",
-    duration: "2021 - 2024"
+    duration: "2021 - 2024",
+    thesis: "Hero.Net - A Mixed Reality Game Show with Audience Interaction",
+    grade: "1.10"
   },
   {
-    imgPath: "/images/chat.png",
+    imgPath: "/logos/lmu.png",
     title: "Ludwig Maximilian University of Munich",
     desc: "Bachelor Media Informatics with focus on Human-Computer Interaction",
-    duration: "2016 - 2020"
+    duration: "2016 - 2020",
+    thesis: "Distances in Cinematic Virtual Reality",
+    grade: "1.85"
   },
   {
-    imgPath: "/images/time.png",
+    imgPath: "/logos/bbg.png",
     title: "Städt. Bertolt-Brecht-Gymnasium Munich",
     desc: "Science Track",
-    duration: "2009 - 2016"
+    duration: "2009 - 2016",
+    thesis: "",
+    grade: "2.10"
   },
 ];
 
@@ -87,5 +94,38 @@ export const expCards = [
       "Improved app performance and user experience through code optimization and testing.",
       "Coordinated with the product team to implement features based on feedback.",
     ],
+  },
+];
+
+export const techStackIcons = [
+  {
+    name: "React Developer",
+    modelPath: "/models/test/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Python Developer",
+    modelPath: "/models/test/python-transformed.glb",
+    scale: 0.8,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Backend Developer",
+    modelPath: "/models/test/node-transformed.glb",
+    scale: 5,
+    rotation: [0, -Math.PI / 2, 0],
+  },
+  {
+    name: "Interactive Developer",
+    modelPath: "/models/test/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Project Manager",
+    modelPath: "/models/test/git-svg-transformed.glb",
+    scale: 0.05,
+    rotation: [0, -Math.PI / 4, 0],
   },
 ];

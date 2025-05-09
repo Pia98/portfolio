@@ -1,4 +1,4 @@
-import { OrbitControls } from "@react-three/drei";
+import { Float, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 import BgPlane from "./BgPlane.jsx";
@@ -29,12 +29,14 @@ const ThreeDExperience = () => {
       <group>
         <BgPlane />
       </group>
-      <group
-        scale={isMobile ? 0.7 : 1}
-        position={isMobile ? [0, 0, 0] : [0.75, 0, 0]}
-      >
-        <Logo />
-      </group>
+      <Float speed={4.5} rotationIntensity={0.3} floatIntensity={0.75}>
+        <group
+          scale={isMobile ? 0.7 : 1}
+          position={isMobile ? [0, 0, 0] : [0.75, 0, 0]}
+        >
+          <Logo />
+        </group>
+      </Float>
     </Canvas>
   );
 };

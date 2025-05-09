@@ -18,28 +18,35 @@ const Showcase = () => {
       project3Ref.current,
     ];
 
-    projects.forEach((project, index) => {
-      gsap.fromTo(
-        project,
-        { opacity: 0, y: 50 },
+    gsap.from(".first-project-wrapper" ,
         {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          delay: 0.3 * (index + 1),
-          scrollTrigger: {
-            trigger: project,
-            start: "top bottom-=200",
-            toggleActions: "restart none none none",
-          },
-        }
-      );
-    });
-    gsap.fromTo(
-      sectionRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
-    );
+            xPercent: -100,
+            opacity: 0,
+            transformOrigin: "left left",
+            duration: 1,
+            ease: "power2.inOut",
+            scrollTrigger: {
+              trigger: "#showcase",
+              start: "top 80%",
+              toggleActions: "restart none none none",
+            },
+          });
+
+          gsap.utils.toArray(".project").forEach((project, index) => {
+            gsap.from(project, {
+              xPercent: 100,
+              opacity: 0,
+              transformOrigin: "right right",
+              duration: 1,
+              ease: "power2.inOut",
+              delay: 0.3 * (index + 1),
+              scrollTrigger: {
+                trigger: project,
+                start: "top bottom-=200",
+                toggleActions: "restart none none none",
+              },
+            });
+          });
   }, []);
 
   return (
