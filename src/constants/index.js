@@ -58,21 +58,21 @@ export const schools = [
 export const expCards = [
   {
     review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+      "Auszug aus dem Arbeitszeugnis",
+    imgPath: "/logos/flowsight.svg",
+    logoPath: "/logos/flowsight_mini.png",
+    title: "Working Student Frontend Developer",
+    date: "October 2023 - May 2024",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Contributed to the development of the user interface of the platform Brewcast",
+      "Used .NET Blazor for the frontend development",
+      "Used Radzen UI components",
     ],
   },
   {
     review:
       "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
+    imgPath:  "/logos/iam.svg",
     logoPath: "/images/logo2.png",
     title: "Full Stack Developer",
     date: "June 2020 - December 2023",
@@ -85,7 +85,7 @@ export const expCards = [
   {
     review:
       "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
+    imgPath: "/logos/monks.png",
     logoPath: "/images/logo3.png",
     title: "React Native Developer",
     date: "March 2019 - May 2020",
@@ -99,48 +99,68 @@ export const expCards = [
 
 export const techStackIcons = [
   {
-    name: "React Developer",
-    modelPath: "/models/mine/techIcons/vue.glb",
-    scale: 3,
+    name: "React",
+    modelPath: "/models/mine/techIcons/react.glb",
+    scale: 1,
     rotation: [0, 0.5, 0],
   },
   {
-    name: "Python Developer",
-    modelPath:  "/models/mine/techIcons/github.glb",
+    name: "VueJS",
+    modelPath:  "/models/mine/techIcons/vue.glb",
     scale: 3,
     rotation: [0, -0.3, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/mine/techIcons/figma.glb",
-    scale: 3,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Interactive Developer",
+    name: "EmberJS",
     modelPath: "/models/mine/techIcons/ember.glb",
     scale: 3,
-    rotation: [0, 0, 0],
+    rotation: [0, 0.1, 0],
   },
   {
-    name: "Project Manager",
+    name: "Java",
     modelPath: "/models/mine/techIcons/java.glb",
     scale: 3,
     rotation: [0, 0, 0],
+  },
+  {
+    name: "NodeJS",
+    modelPath: "/models/mine/techIcons/node.glb",
+    scale: 3,
+    rotation: [0, -Math.PI * 0.5, 0],
   },{
-    name: "Project Manager",
+    name: "ThreeJS",
+    modelPath: "/models/mine/techIcons/three.glb",
+    scale: 0.04,
+    rotation: [0, 0, 0],
+  },{
+    name: "C#",
     modelPath: "/models/mine/techIcons/csharp.glb",
     scale: 3,
+    rotation: [0, 0.6, 0],
+  },{
+    name: "Figma",
+    modelPath: "/models/mine/techIcons/figma.glb",
+    scale: 3,
+    rotation: [0, -0.6, 0],
+  },{
+    name: "Adobe CC",
+    modelPath: "/models/mine/techIcons/adobe.glb",
+    scale: 1,
     rotation: [0, 0, 0],
   },{
-    name: "Project Manager",
-    modelPath: "/models/mine/techIcons/unreal.glb",
+    name: "Git",
+    modelPath: "/models/mine/techIcons/git.glb",
+    scale: 0.045,
+    rotation: [0, 0, 0],
+  },{
+    name: "GitHub",
+    modelPath: "/models/mine/techIcons/github.glb",
     scale: 3,
     rotation: [0, 0, 0],
   },{
-    name: "Project Manager",
-    modelPath: "/models/mine/techIcons/adobe.glb",
-    scale: 1,
+    name: "Unreal Engine",
+    modelPath: "/models/mine/techIcons/unreal.glb",
+    scale: 3,
     rotation: [0, 0, 0],
   },
 ];
