@@ -3,7 +3,7 @@ import Opening from './sections/Opening';
 import Showcase from './sections/Showcase';
 import NavBar from './components/NavBar';
 import LogoCarusell from './sections/LogoCarusell';
-import FeatureCards from './sections/FeatureCards';
+import EducationCards from './sections/EducationCards';
 import Timeline from './sections/Timeline';
 import TechStack from './sections/TechStack';
 
@@ -13,9 +13,9 @@ const App = () => {
         <>
             <NavBar />
             <Opening />
-            <FeatureCards/>
+            <EducationCards/>
             <Showcase />
-            <LogoCarusell />
+            {/* <LogoCarusell /> */}
             <Timeline/>
             <TechStack/>
         </>

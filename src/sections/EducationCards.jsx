@@ -64,13 +64,13 @@ const FeatureCards = () => {
             <p className="text-white text-lg">{school.desc}</p>
             {school.thesis != "" && (
               <div>
-                <p className="text-[#839cb5] italic">Thesis</p>
+                <p className="text-light-purple italic">Thesis</p>
                 <p className="text-lg">{school.thesis}</p>
               </div>
             )}
 
             <div>
-              <p className="text-[#839cb5] italic">Final Grade (1.0 best to 6.0)</p>
+              <p className="text-light-purple italic">Final Grade (1.0 best to 6.0)</p>
               <p className="text-lg">{school.grade}</p>
             </div>
             </div>

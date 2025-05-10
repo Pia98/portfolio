@@ -1,6 +1,6 @@
 import React, { use } from 'react';
 import Typewriter from 'typewriter-effect';
-import { heading_texts } from '../constants/index.js';
+import { heading_texts, intro_text } from '../constants/index.js';
 import FancyButton from '../components/FancyButton.jsx';
 import ThreeDExperience from '../components/threeDModels/ThreeDExperience.jsx';
 import { useGSAP } from '@gsap/react';
@@ -37,9 +37,7 @@ const Opening = () => {
                               }}/>
                         </div>
                         <p className='text-white md:text-xl relative z-10 pointer-events-none anim-text'>
-                            I am a frontend web developer based in Augsburg, Germany.
-                            I am always eager to learn new technologies and improve my skills.
-                            I am looking for a team where I can contribute my knowledge and grow as a developer.
+                           {intro_text}
                         </p>
                         <FancyButton
                         className='md:w-80 md:h-16 w-60 h-12 anim-text'

@@ -85,7 +85,7 @@ const Timeline = () => {
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-white-50">📆 {card.date}</p>
-                        <p className="text-[#839cb5] italic">
+                        <p className="text-light-purple italic">
                           Responsibilities
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">

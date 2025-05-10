@@ -5,7 +5,7 @@ html,
 body {
   width: 100vw;
   background-color: var(--color-dark-blue);
-  color: var(--white);
+  color: var(--color-white);
 }
 
 section {
@@ -22,25 +22,31 @@ section {
   --font-heading: Oswald, Inter, -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", sans-serif;
 
-  --white: #ffffff;
+  --color-white: #ffffff;
 
   --color-white-50: #ffffff;
 
-  --color-black-50: #181818;
-  --black: #000030;
-  --color-black-100: #000000;
-  --color-black-200: #000000;
-
-  --color-blue-50: #97bcff;
-  --color-blue-100: #00000d;
+  --color-black: #00000d;
+  --color-black-50: #181820;
+  --color-black-100: #242428;
+  --color-black-200: #626272;
 
   --purple: #b799ff;
   --grey: #626272;
-  --color-dark-blue: #00000d;
   --primary: #97bcff;
   --secondary: #9dfbff;
 
-  --color-mint-500: oklch(0.72 0.11 178);
+  --color-dark-blue: #00000d;
+  --color-dark-blue-50: #000030;
+  --color-blue: #000053;
+  --color-blue-50: #0000CB;
+  --color-light-blue: #97BCFF;
+  --color-turquoise: #9DFBFF;
+  --color-purple: #B799FF;
+  --color-light-purple: #CFD0FF;
+
+  --color-light-blue-t: #97BCFF32;
+  --color-light-blue-t-50: #97BCFF50;
 }
 
 @layer utilities {
@@ -109,7 +115,7 @@ section {
   }
 
   .header-badge {
-    @apply bg-blue-50 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+    @apply bg-light-blue-t py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
   }
 
   .cta-wrapper {
@@ -117,7 +123,7 @@ section {
   }
 
   .header-3d-layout {
-    @apply w-full h-full min-h-[50vh] absolute xl:-top-20 top-24  right-0;
+    @apply w-full h-full min-h-[50vh] absolute lg:-top-20 md:top-0 right-0;
   }
 
   .navbar {
@@ -230,11 +236,11 @@ section {
       @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
 
       .image-wrapper {
-        @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:px-5 2xl:px-12 py-0;
+        @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:p-5 2xl:p-12 p-0;
       }
 
       img {
-        @apply w-full h-full object-contain rounded-xl;
+        @apply w-full h-full object-cover rounded-xl;
       }
 
       h2 {
@@ -244,7 +250,7 @@ section {
   }
 
   .card-border {
-    @apply border border-black bg-black-50;
+    @apply border border-black bg-linear-to-b from-light-blue-t to-transparent;
   }
 
   .marquee-item {
@@ -260,7 +266,7 @@ section {
   }
 
   .timeline-logo {
-    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;
+    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-light-blue-t-50 bg-light-blue-t;
   }
 
   .exp-card-wrapper {
@@ -382,10 +388,10 @@ section {
   background: linear-gradient(
     0deg,
     rgba(69, 222, 196, 0) 0%,
-    #62e0ff 25%,
+    #97BCFF 25%,
     #52aeff 37.51%,
-    #fd5c79 62.83%,
-    #6d45ce 92.91%
+    #B799FF 62.83%,
+    #0000CB 92.91%
   );
 }
 

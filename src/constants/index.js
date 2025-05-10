@@ -1,4 +1,4 @@
-// use this file to devine all strings
+// use this file to devine all strings and content such as img paths
 
 export const heading_texts = [
   "Hi, I'm Pia.",
@@ -8,6 +8,9 @@ export const heading_texts = [
   "I love to create innovative projects.",
   "Maybe, I am your next team member?",
 ];
+
+export const intro_text =
+  "I am a frontend web developer based in Augsburg, Germany. I am always eager to learn new technologies and improve my skills. I am looking for a team where I can contribute my knowledge and grow as a developer.";
 
 export const navLinks = [
   { name: "Education", targetId: "education" },
@@ -35,7 +38,7 @@ export const schools = [
     desc: "Master Interactive Media Systems with focus on Animation and Interaction Research",
     duration: "2021 - 2024",
     thesis: "Hero.Net - A Mixed Reality Game Show with Audience Interaction",
-    grade: "1.10"
+    grade: "1.10",
   },
   {
     imgPath: "/logos/lmu.png",
@@ -43,7 +46,7 @@ export const schools = [
     desc: "Bachelor Media Informatics with focus on Human-Computer Interaction",
     duration: "2016 - 2020",
     thesis: "Distances in Cinematic Virtual Reality",
-    grade: "1.85"
+    grade: "1.85",
   },
   {
     imgPath: "/logos/bbg.png",
@@ -51,14 +54,13 @@ export const schools = [
     desc: "Science Track",
     duration: "2009 - 2016",
     thesis: "",
-    grade: "2.10"
+    grade: "2.10",
   },
 ];
 
 export const expCards = [
   {
-    review:
-      "Auszug aus dem Arbeitszeugnis",
+    review: "Auszug aus dem Arbeitszeugnis",
     imgPath: "/logos/flowsight.svg",
     logoPath: "/logos/flowsight_mini.png",
     title: "Working Student Frontend Developer",
@@ -72,8 +74,8 @@ export const expCards = [
   {
     review:
       "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath:  "/logos/iam.svg",
-    logoPath: "/images/logo2.png",
+    imgPath: "/logos/iam.svg",
+    logoPath: "/logos/iam_mini.png",
     title: "Full Stack Developer",
     date: "June 2020 - December 2023",
     responsibilities: [
@@ -86,7 +88,7 @@ export const expCards = [
     review:
       "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/logos/monks.png",
-    logoPath: "/images/logo3.png",
+    logoPath: "/logos/monks_mini.png",
     title: "React Native Developer",
     date: "March 2019 - May 2020",
     responsibilities: [
@@ -106,7 +108,7 @@ export const techStackIcons = [
   },
   {
     name: "VueJS",
-    modelPath:  "/models/mine/techIcons/vue.glb",
+    modelPath: "/models/mine/techIcons/vue.glb",
     scale: 3,
     rotation: [0, -0.3, 0],
   },
@@ -127,40 +129,47 @@ export const techStackIcons = [
     modelPath: "/models/mine/techIcons/node.glb",
     scale: 3,
     rotation: [0, -Math.PI * 0.5, 0],
-  },{
+  },
+  {
     name: "ThreeJS",
     modelPath: "/models/mine/techIcons/three.glb",
     scale: 0.04,
     rotation: [0, 0, 0],
-  },{
-    name: "C#",
-    modelPath: "/models/mine/techIcons/csharp.glb",
-    scale: 3,
-    rotation: [0, 0.6, 0],
-  },{
-    name: "Figma",
-    modelPath: "/models/mine/techIcons/figma.glb",
-    scale: 3,
-    rotation: [0, -0.6, 0],
-  },{
-    name: "Adobe CC",
-    modelPath: "/models/mine/techIcons/adobe.glb",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },{
-    name: "Git",
-    modelPath: "/models/mine/techIcons/git.glb",
-    scale: 0.045,
-    rotation: [0, 0, 0],
-  },{
-    name: "GitHub",
-    modelPath: "/models/mine/techIcons/github.glb",
-    scale: 3,
-    rotation: [0, 0, 0],
-  },{
-    name: "Unreal Engine",
-    modelPath: "/models/mine/techIcons/unreal.glb",
-    scale: 3,
-    rotation: [0, 0, 0],
   },
+  // {
+  //   name: "C#",
+  //   modelPath: "/models/mine/techIcons/csharp.glb",
+  //   scale: 3,
+  //   rotation: [0, 0.6, 0],
+  // },
+  // {
+  //   name: "Figma",
+  //   modelPath: "/models/mine/techIcons/figma.glb",
+  //   scale: 3,
+  //   rotation: [0, -0.6, 0],
+  // },
+  // {
+  //   name: "Adobe CC",
+  //   modelPath: "/models/mine/techIcons/adobe.glb",
+  //   scale: 1,
+  //   rotation: [0, 0, 0],
+  // },
+  // {
+  //   name: "Git",
+  //   modelPath: "/models/mine/techIcons/git.glb",
+  //   scale: 0.045,
+  //   rotation: [0, 0, 0],
+  // },
+  // {
+  //   name: "GitHub",
+  //   modelPath: "/models/mine/techIcons/github.glb",
+  //   scale: 3,
+  //   rotation: [0, 0, 0],
+  // },
+  // {
+  //   name: "Unreal Engine",
+  //   modelPath: "/models/mine/techIcons/unreal.glb",
+  //   scale: 3,
+  //   rotation: [0, 0, 0],
+  // },
 ];

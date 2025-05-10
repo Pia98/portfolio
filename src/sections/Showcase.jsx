@@ -76,7 +76,7 @@ const Showcase = () => {
           {/* RIGHT */}
           <div className="project-list-wrapper overflow-hidden">
             <div ref={project2Ref} className="project">
-              <div className="image-wrapper bg-[#ffefdb]">
+              <div className="image-wrapper bg-linear-to-b from-light-blue-t to-transparent">
                 <img
                   src="/projectImages/rarity/opener.png"
                   alt="Project: Rarity"
@@ -85,7 +85,7 @@ const Showcase = () => {
               <h2>Rarity: A website to showcase endangered species</h2>
             </div>
             <div ref={project3Ref} className="project">
-              <div className="image-wrapper bg-[#ffe7eb]">
+              <div className="image-wrapper bg-linear-to-b from-light-blue-t to-transparent">
                 <img
                   src="/projectImages/vag/opener.png"
                   alt="Project: Rarity"
