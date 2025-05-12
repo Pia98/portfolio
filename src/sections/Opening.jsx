@@ -1,4 +1,3 @@
-import React, { use } from 'react';
 import Typewriter from 'typewriter-effect';
 import { heading_texts, intro_text } from '../constants/index.js';
 import FancyButton from '../components/FancyButton.jsx';
@@ -43,7 +42,7 @@ const Opening = () => {
                         className='md:w-80 md:h-16 w-60 h-12 anim-text'
                         id="button"
                         text='See more!'
-                        targetId='showcase'/>	
+                        targetId='education'/>	
                     </div>
                 </header>
                 {/* right: 3d model */} 

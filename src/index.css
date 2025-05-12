@@ -47,6 +47,7 @@ section {
 
   --color-light-blue-t: #97BCFF32;
   --color-light-blue-t-50: #97BCFF50;
+  --color-light-blue-t-100: #1E2659AA;
 }
 
 @layer utilities {
@@ -166,7 +167,7 @@ section {
     }
 
     .contact-btn {
-      @apply flex;
+      @apply flex cursor-pointer;
 
       .inner {
         @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black transition-colors duration-300;
@@ -253,6 +254,10 @@ section {
     @apply border border-black bg-linear-to-b from-light-blue-t to-transparent;
   }
 
+  .tech-card {
+    @apply rounded-2xl;
+  }
+
   .marquee-item {
     @apply md:w-40 w-32;
   }
@@ -282,7 +287,7 @@ section {
   }
 
   .tech-card-content {
-    @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh] overflow-hidden z-10 group-hover:cursor-grab;
+    @apply flex flex-col md:justify-center items-center xl:gap-5 h-[25vh] overflow-hidden z-10 group-hover:cursor-grab;
 
     & p {
       @apply text-lg 2xl:text-2xl pb-5 xl:pb-0 font-semibold text-white text-center;
@@ -290,11 +295,16 @@ section {
   }
 
   .tech-grid {
-    @apply grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
+    @apply grid xl:grid-cols-6 md:grid-cols-4 grid-cols-3 xl:gap-10 md:gap-7 gap-3 mt-16;
   }
 
   .tech-icon-wrapper {
     @apply flex justify-center items-center w-52 h-60 relative;
+  }
+
+  .tech-model-name {
+    @apply size-30 text-center text-lg font-semibold text-white hidden group-hover:flex rounded-full justify-center items-center border border-light-blue-t-50 bg-light-blue-t-100;
+    
   }
 
   form {
@@ -304,7 +314,7 @@ section {
 
     input,
     textarea {
-      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-50 bg-blue-100 rounded-md;
+      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-purple bg-white text-dark-blue-50 rounded-md;
     }
 
     a {

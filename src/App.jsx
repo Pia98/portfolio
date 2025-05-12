@@ -6,6 +6,7 @@ import LogoCarusell from './sections/LogoCarusell';
 import EducationCards from './sections/EducationCards';
 import Timeline from './sections/Timeline';
 import TechStack from './sections/TechStack';
+import Contact from './sections/Contact';
 
 const App = () => {
     console.log("Hi. I see you are curious how I built this portfolio. So I used React, Vite, Tailwind CSS, and Three.js. I hope you enjoy it! :)");
@@ -18,6 +19,7 @@ const App = () => {
             {/* <LogoCarusell /> */}
             <Timeline/>
             <TechStack/>
+            <Contact/>
         </>
     );
 }
