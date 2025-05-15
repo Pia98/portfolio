@@ -1,7 +1,4 @@
-import React from "react";
 import { useGLTF } from "@react-three/drei";
-import * as THREE from "three";
-import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
 export function Logo(props) {
@@ -22,7 +19,7 @@ export function Logo(props) {
   //   }
   // });
 
-  const { nodes, materials } = useGLTF("/models/mine/Logo.glb");
+  const { nodes, materials } = useGLTF("/models/Logo.glb");
   return (
     <group {...props} dispose={null} ref={meshRef}>
       <mesh
@@ -41,4 +38,4 @@ export function Logo(props) {
   );
 }
 
-useGLTF.preload("/models/mine/Logo.glb");
+useGLTF.preload("/models/Logo.glb");

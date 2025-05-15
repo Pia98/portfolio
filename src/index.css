@@ -13,7 +13,11 @@ section {
 }
 
 :root {
-   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%); /*this is important for the glow effect */
+  --gradient: radial-gradient(
+    circle,
+    #e5e5e5 0%,
+    #fff 100%
+  ); /*this is important for the glow effect */
 }
 
 @theme {
@@ -39,15 +43,15 @@ section {
   --color-dark-blue: #00000d;
   --color-dark-blue-50: #000030;
   --color-blue: #000053;
-  --color-blue-50: #0000CB;
-  --color-light-blue: #97BCFF;
-  --color-turquoise: #9DFBFF;
-  --color-purple: #B799FF;
-  --color-light-purple: #CFD0FF;
+  --color-blue-50: #0000cb;
+  --color-light-blue: #97bcff;
+  --color-turquoise: #9dfbff;
+  --color-purple: #b799ff;
+  --color-light-purple: #cfd0ff;
 
-  --color-light-blue-t: #97BCFF32;
-  --color-light-blue-t-50: #97BCFF50;
-  --color-light-blue-t-100: #1E2659AA;
+  --color-light-blue-t: #97bcff32;
+  --color-light-blue-t-50: #97bcff50;
+  --color-light-blue-t-100: #1e2659aa;
 }
 
 @layer utilities {
@@ -304,7 +308,6 @@ section {
 
   .tech-model-name {
     @apply size-30 text-center text-lg font-semibold text-white hidden group-hover:flex rounded-full justify-center items-center border border-light-blue-t-50 bg-light-blue-t-100;
-    
   }
 
   form {
@@ -329,6 +332,19 @@ section {
   .footer {
     @apply my-10 md:mt-20 mt-10 text-white px-5 md:px-20 xl:px-20 flex items-center justify-center;
 
+    .arrow-wrapper {
+      @apply size-10 md:size-12 right-10 top-1/2 
+        -translate-y-1/2 flex justify-center items-center m-auto md:m-0;
+
+      .icon {
+        @apply flex cursor-pointer;
+      }
+
+      img {
+        @apply inline-block size-5 translate-y-0 animate-bounce translate-y-0 transition-all duration-500;
+      }
+    }
+
     .footer-container {
       @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
     }
@@ -345,7 +361,7 @@ section {
       }
 
       img {
-        @apply inline-block;
+        @apply inline-block size-5;
       }
     }
   }
@@ -398,10 +414,10 @@ section {
   background: linear-gradient(
     0deg,
     rgba(69, 222, 196, 0) 0%,
-    #97BCFF 25%,
+    #97bcff 25%,
     #52aeff 37.51%,
-    #B799FF 62.83%,
-    #0000CB 92.91%
+    #b799ff 62.83%,
+    #0000cb 92.91%
   );
 }
 

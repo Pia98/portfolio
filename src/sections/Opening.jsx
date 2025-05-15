@@ -17,9 +17,6 @@ const Opening = () => {
     });
     return (
         <section id="opening" className='relative overflow-hidden'>
-            <div className='absolute top-0 left-0 z-10'>
-                <img src='/images/bg.png' alt='Background'/>
-            </div>
             <div className='header-layout'>
                 {/* Left: text */}
                 <header className='flex flex-col justify-center absolute xl:w-[50%] left-0 md:w-full w-screen md:px-20 px-5'>

@@ -1,21 +1,10 @@
+import { scrollToSmooth } from "../constants/functions";
+
 const FancyButton = ({ text, className, id, targetId }) => {
     return (
      <a className={`${className ?? ''} cta-wrapper`}
      id={id}
-     onClick={(e) => {
-        e.preventDefault();
-        const target = document.getElementById(targetId);
-        if(target && id) {
-            const offset = window.innerHeight * 0.05
-            const top = target.getBoundingClientRect().top 
-            + window.scrollY - offset;
-
-            window.scrollTo({
-                top: top,
-                behavior: 'smooth'
-            });
-        }
-     }}>
+     onClick={(e) => scrollToSmooth(e, targetId)}>
         <div className="cta-button group">
             <div className="bg-circle"/>
             <p className="text">{ text }</p>

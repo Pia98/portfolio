@@ -60,41 +60,46 @@ export const schools = [
 
 export const expCards = [
   {
-    review: "Auszug aus dem Arbeitszeugnis",
+    review: "Ms. Probst possesses extremely comprehensive and outstanding professional knowledge, which she has consistently applied confidently and successfully to her tasks. Ms. Probst has quickly become acquainted with the responsibilities assigned to her.",
     imgPath: "/logos/flowsight.svg",
     logoPath: "/logos/flowsight_mini.png",
     title: "Working Student Frontend Developer",
     date: "October 2023 - May 2024",
     responsibilities: [
-      "Contributed to the development of the user interface of the platform Brewcast",
-      "Used .NET Blazor for the frontend development",
-      "Used Radzen UI components",
+      "Conception and development of front-end features for the Brewcast web platform",
+      "Definition of data structures and implementation of program components in the Blazor web framework",
+      "Agile working in the Scrum framework",
+      "Conducting error analysis and troubleshooting of custom-developed or existing solutions"
     ],
   },
   {
-    review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Ms. Probst always performed the tasks assigned to her to our complete satisfaction. She demonstrated great commitment and initiative and consistently applied her extensive and sound professional knowledge successfully.",
     imgPath: "/logos/iam.svg",
     logoPath: "/logos/iam_mini.png",
-    title: "Full Stack Developer",
+    title: "Working Student Web Developer",
     date: "June 2020 - December 2023",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Programming of special plug-ins for Kirby CMS",
+      "Various tasks in Kirby frontend development",
+      "Contributed in updating a Directus database: Adjustments in the frontend (vuejs) and backend",
+      "Development of AplineJS components",
+      "Creation of static product pages"
     ],
   },
   {
     review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+      "Ms. Probst worked quickly, independently, and in a solution-oriented manner, and impressed with her high resilience and flexibility. She completed the tasks assigned to her to our fullest satisfaction.",
     imgPath: "/logos/monks.png",
     logoPath: "/logos/monks_mini.png",
-    title: "React Native Developer",
+    title: "Working Student Frontend Developer",
     date: "March 2019 - May 2020",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Further development of the award-winning teleconsultation service PädExpert",
+      "Integration of the PraxisApp “Mein Kinder- und Jugendarzt” into the teleconsultation service PädExpert (PädAssist)",
+      "Development of the video consultation feature in the PraxisApp (PädHome)",
+      "Integration of the research project “MOMA” into PädExpert",
+      "Development of the digital cycle calendar in the PraxisApp “Meine Gyn-Praxis” as part of the telemedicine fertility consultation",
+      "Frontend development of the native app for children of separated parents “Getrennt – Gemeinsam”"
     ],
   },
 ];
@@ -102,86 +107,103 @@ export const expCards = [
 export const techStackIcons = [
   {
     name: "React",
-    modelPath: "/models/mine/techIcons/react.glb",
+    modelPath: "/models/techIcons/react.glb",
     scale: 1,
     rotation: [0, 0.5, 0],
     imgPath: "/logos/react.svg",
   },
   {
     name: "VueJS",
-    modelPath: "/models/mine/techIcons/vue.glb",
+    modelPath: "/models/techIcons/vue.glb",
     scale: 3,
     rotation: [0, -0.3, 0],
     imgPath: "/logos/vue.svg",
   },
   {
     name: "EmberJS",
-    modelPath: "/models/mine/techIcons/ember.glb",
+    modelPath: "/models/techIcons/ember.glb",
     scale: 3,
     rotation: [0, 0.1, 0],
     imgPath: "/logos/ember.svg",
   },
   {
     name: "Java",
-    modelPath: "/models/mine/techIcons/java.glb",
+    modelPath: "/models/techIcons/java.glb",
     scale: 3,
     rotation: [0, 0, 0],
     imgPath: "/logos/java_oc.svg",
   },
   {
     name: "NodeJS",
-    modelPath: "/models/mine/techIcons/node.glb",
+    modelPath: "/models/techIcons/node.glb",
     scale: 3,
     rotation: [0, -Math.PI * 0.5, 0],
     imgPath: "/logos/node.svg",
   },
   {
     name: "ThreeJS",
-    modelPath: "/models/mine/techIcons/three.glb",
+    modelPath: "/models/techIcons/three.glb",
     scale: 0.04,
     rotation: [0, 0, 0],
     imgPath: "/logos/threejs.svg",
   },
   {
     name: "C#",
-    modelPath: "/models/mine/techIcons/csharp.glb",
+    modelPath: "/models/techIcons/csharp.glb",
     scale: 3,
     rotation: [0, 0.6, 0],
     imgPath: "/logos/csharp_oc.svg",
   },
   {
     name: "Figma",
-    modelPath: "/models/mine/techIcons/figma.glb",
+    modelPath: "/models/techIcons/figma.glb",
     scale: 3,
     rotation: [0, -0.6, 0],
     imgPath: "/logos/figma.svg",
   },
   {
     name: "Adobe CC",
-    modelPath: "/models/mine/techIcons/adobe.glb",
+    modelPath: "/models/techIcons/adobe.glb",
     scale: 1,
     rotation: [0, 0, 0],
     imgPath: "/logos/adobe_oc.svg",
   },
   {
     name: "Git",
-    modelPath: "/models/mine/techIcons/git.glb",
+    modelPath: "/models/techIcons/git.glb",
     scale: 0.045,
     rotation: [0, 0, 0],
     imgPath: "/logos/git.svg",
   },
   {
     name: "GitHub",
-    modelPath: "/models/mine/techIcons/github.glb",
+    modelPath: "/models/techIcons/github.glb",
     scale: 3,
     rotation: [0, 0, 0],
     imgPath: "/logos/github.svg",
   },
   {
     name: "Unreal Engine",
-    modelPath: "/models/mine/techIcons/unreal.glb",
+    modelPath: "/models/techIcons/unreal.glb",
     scale: 3,
     rotation: [0, 0, 0],
     imgPath: "/logos/unreal_oc.svg",
+  },
+];
+
+
+export const socialImgs = [
+  {
+    name: "linkedin",
+    imgPath: "/logos/linkedin.png",
+    url: "https://www.linkedin.com/in/pia-probst-1b968a187"
+  },{
+    name: "gihub",
+    imgPath: "/logos/github.svg",
+    url: "https://github.com/Pia98"
+  },{
+    name: "shadertoy",
+    imgPath: "/logos/shadertoy.png",
+    url: "https://www.shadertoy.com/user/TalkToTheDuck"
   },
 ];
