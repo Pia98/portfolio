@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="arrow-wrapper">
           <a onClick={(e) => scrollToSmooth(e, "opening")} className="icon">
-            <img src="/images/arrow-up.svg" />
+            <img src="/general/arrow-up.svg" />
           </a>
         </div>
         <div className="socials">

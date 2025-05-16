@@ -64,7 +64,7 @@ const Timeline = () => {
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card, index) => (
-              <div key={card.title} className="exp-card-wrapper">
+              <div key={card.url} className="exp-card-wrapper">
                 <a className="xl:w-2/6" href={card.url} target="_blank">
                   <GlowCard card={card} index={index}>
                     <div>

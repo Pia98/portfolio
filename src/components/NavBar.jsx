@@ -22,7 +22,7 @@ const NavBar = () => {
         <a className="logo contact-btn flex-row items-center gap-1" onClick={(e) => scrollToSmooth(e, "opening")}>
           <img
             alt="Pias logo"
-            src="/projectImages/Logo.svg"
+            src="/projects/Logo.svg"
             width="48"
             height="48"
           />

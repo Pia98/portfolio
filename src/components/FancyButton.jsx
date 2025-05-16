@@ -9,7 +9,7 @@ const FancyButton = ({ text, className, id, targetId }) => {
             <div className="bg-circle"/>
             <p className="text">{ text }</p>
             <div className="arrow-wrapper">
-                <img src="/images/arrow-down.svg" alt="Arrow down"/>
+                <img src="/general/arrow-down.svg" alt="Arrow down"/>
             </div>
         </div>
      </a>

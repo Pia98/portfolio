@@ -57,7 +57,7 @@ const Showcase = () => {
           <div ref={project1Ref} className="first-project-wrapper">
             <div className="image-wrapper">
               <img
-                src="/projectImages/heroNet/opener.png"
+                src="/projects/heroNet/opener.png"
                 alt="First Project Hero.Net"
               />
             </div>
@@ -78,7 +78,7 @@ const Showcase = () => {
             <div ref={project2Ref} className="project">
               <div className="image-wrapper bg-linear-to-b from-light-blue-t to-transparent">
                 <img
-                  src="/projectImages/rarity/opener.png"
+                  src="/projects/rarity/opener.png"
                   alt="Project: Rarity"
                 />
               </div>
@@ -87,7 +87,7 @@ const Showcase = () => {
             <div ref={project3Ref} className="project">
               <div className="image-wrapper bg-linear-to-b from-light-blue-t to-transparent">
                 <img
-                  src="/projectImages/vag/opener.png"
+                  src="/projects/vag/opener.png"
                   alt="Project: Rarity"
                 />
               </div>
