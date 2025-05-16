@@ -71,6 +71,7 @@ export const expCards = [
       "Agile working in the Scrum framework",
       "Conducting error analysis and troubleshooting of custom-developed or existing solutions"
     ],
+    url:"https://www.flowsight.de"
   },
   {
     review: "Ms. Probst always performed the tasks assigned to her to our complete satisfaction. She demonstrated great commitment and initiative and consistently applied her extensive and sound professional knowledge successfully.",
@@ -85,6 +86,7 @@ export const expCards = [
       "Development of AplineJS components",
       "Creation of static product pages"
     ],
+    url: "https://www.i-am.agency"
   },
   {
     review:
@@ -101,6 +103,7 @@ export const expCards = [
       "Development of the digital cycle calendar in the PraxisApp “Meine Gyn-Praxis” as part of the telemedicine fertility consultation",
       "Frontend development of the native app for children of separated parents “Getrennt – Gemeinsam”"
     ],
+    url: "https://www.monks.de"
   },
 ];
 

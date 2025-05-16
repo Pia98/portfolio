@@ -60,18 +60,18 @@ const Timeline = () => {
       className="w-full md:mt-40 mt-20 section-padding xl:px-0"
     >
       <div className="w-full h-full md:px-20 px-5">
-        <TitleHeader title="Work Experience" sub="💼 My Career Overview" />
+        <TitleHeader title="Work Experience" sub="My Career Overview" />
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card, index) => (
               <div key={card.title} className="exp-card-wrapper">
-                <div className="xl:w-2/6">
+                <a className="xl:w-2/6" href={card.url} target="_blank">
                   <GlowCard card={card} index={index}>
                     <div>
-                      <img src={card.imgPath} alt={card.title} />
+                      <img className="w-35 object-contain" src={card.imgPath} alt={card.title} />
                     </div>
                   </GlowCard>
-                </div>
+                </a>
                 <div className="xl:w-4/6">
                   <div className="flex items-start">
                     <div className="timeline-wrapper">
