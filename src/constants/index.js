@@ -46,6 +46,58 @@ export const schools = [
   },
 ];
 
+export const showcaseProjects = [
+  {
+    name: "Hero.Net",
+    title: "Hero.Net: An interactive TV-Gameshow with Mixed Reality",
+    short_desc: "hero.net is an interactive TV game show, in which two teams are challenged to a quest for the core codes of the internet. By finding those, they rescue the internet from the antagonist. The contestants are sent to a virtual environment. In order to win, they must complete tasks and challenges, as well as escape the traps the antagonist has laid out for them.",
+    long_desc: "",
+    imgPath: "/projects/heroNet/opener.png"
+  }, {
+    name: "Rarity",
+    title: "Rarity: A website to showcase endangered species",
+    short_desc: "",
+    long_desc: "",
+    imgPath: "/projects/rarity/opener.png"
+  }, {
+    name: "The virtual art gallery",
+    title: "The virtual art gallery",
+    short_desc: "",
+    long_desc: "",
+    imgPath: "/projects/vag/opener.png"
+  }, {
+    name: "Artificial Bees?",
+    title: "Artificial Bees: A 3D-Blender Scene",
+    short_desc: "",
+    long_desc: "",
+    imgPath: "/projects/vag/opener.png"
+  }, {
+    name: "Lilo",
+    title: "Lilo-App: Your digital best friend",
+    short_desc: "",
+    long_desc: "",
+    imgPath: "/projects/vag/opener.png"
+  }, {
+    name: "Distances and Shot Sizes in Cinematic Virtual Reality",
+    title: "Distances and Shot Sizes in Cinematic Virtual Reality",
+    short_desc: "",
+    long_desc: "",
+    imgPath: "/projects/vag/opener.png"
+  }, {
+    name: "Eat What You Catch",
+    title: "Eat What You Catch: A Mixed Reality Pizza Game",
+    short_desc: "",
+    long_desc: "",
+    imgPath: "/projects/vag/opener.png"
+  }, {
+    name: "Rats Vs Science",
+    title: "Rats Vs Science: A Sidescroller Jump 'n Run",
+    short_desc: "",
+    long_desc: "",
+    imgPath: "/projects/vag/opener.png"
+  }
+]
+
 export const expCards = [
   {
     review: "Ms. Probst possesses extremely comprehensive and outstanding professional knowledge, which she has consistently applied confidently and successfully to her tasks. Ms. Probst has quickly become acquainted with the responsibilities assigned to her.",

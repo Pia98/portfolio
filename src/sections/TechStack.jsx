@@ -47,11 +47,9 @@ const TechStack = () => {
                   <div className="tech-icon-wrapper">
                     <TechIcon model={icon} index={index} key={icon.name} />
                   </div>
-                    <div
-                      className="tech-model-name"
-                    >
-                      <h1>{icon.name}</h1>
-                    </div>
+                  <div className="tech-model-name">
+                    <h1>{icon.name}</h1>
+                  </div>
                 </div>
               </div>
             ))}
