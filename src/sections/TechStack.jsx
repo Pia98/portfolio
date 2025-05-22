@@ -39,18 +39,29 @@ const TechStack = () => {
         <div className="tech-grid">
           {!isMobile &&
             techStackIcons.map((icon, index) => (
-              <div key={icon.name} className="card-border tech-card overflow-hidden group">
+              <div
+                key={icon.name}
+                className="card-border tech-card overflow-hidden group"
+              >
                 <div className="tech-card-content z-30">
                   <div className="tech-icon-wrapper">
                     <TechIcon model={icon} index={index} key={icon.name} />
                   </div>
+                    <div
+                      className="tech-model-name"
+                    >
+                      <h1>{icon.name}</h1>
+                    </div>
                 </div>
               </div>
             ))}
 
           {isMobile &&
             techStackIcons.map((icon) => (
-              <div key={icon.name} className="card-border tech-card group overflow-hidden">
+              <div
+                key={icon.name}
+                className="card-border tech-card group overflow-hidden"
+              >
                 <div className="tech-card-content z-30">
                   <div className="tech-icon-wrapper">
                     <img
@@ -60,8 +71,8 @@ const TechStack = () => {
                     />
                   </div>
                   <div className="padding-x w-full">
-                      <p>{icon.name}</p>
-                    </div>
+                    <p>{icon.name}</p>
+                  </div>
                 </div>
               </div>
             ))}

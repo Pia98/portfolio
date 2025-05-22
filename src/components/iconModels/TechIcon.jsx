@@ -47,14 +47,14 @@ const TechIcon = ({ model }) => {
       {/* put the name of the technology here and only show it on hover
                 make just one scene which contains all the models for performance
             */}
-      <Html
+      {/* <Html
         center
         distanceFactor={10}
-        position={[0, 0, 0]}
+        position={[0, -3, 0]}
         className="tech-model-name"
       >
         <h1>{model.name}</h1>
-      </Html>
+      </Html> */}
     {/* </group> */}
 
      </Canvas>

@@ -128,7 +128,7 @@ section {
   }
 
   .header-3d-layout {
-    @apply w-full h-full min-h-[50vh] absolute lg:-top-20 md:top-0 right-0;
+    @apply w-full h-full min-h-[50vh] absolute lg:-top-20 md:top-0 -top-10 right-0;
   }
 
   .navbar {
@@ -307,7 +307,7 @@ section {
   }
 
   .tech-model-name {
-    @apply size-30 text-center text-lg font-semibold text-white hidden group-hover:flex rounded-full justify-center items-center border border-light-blue-t-50 bg-light-blue-t-100;
+    @apply absolute bottom-5 text-center text-lg font-semibold text-white hidden group-hover:flex justify-center items-center z-40;
   }
 
   form {
