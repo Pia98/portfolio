@@ -1,14 +1,13 @@
-import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { showcaseProjects } from "../constants";
+import FancyButton from "../components/FancyButton.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Showcase = () => {
-
-  useGSAP(() => {   
+  useGSAP(() => {
     gsap.from(".first-project-wrapper", {
       xPercent: -100,
       opacity: 0,
@@ -61,20 +60,25 @@ const Showcase = () => {
           {/* RIGHT */}
           <div className="project-list-wrapper overflow-hidden">
             {showcaseProjects.map((project, index) => {
-              if (index < 3) {
-                return <div className="project" key={project.name}>
-              <div className="image-wrapper bg-linear-to-b from-light-blue-t to-transparent">
-                <img
-                  src={project.imgPath}
-                  alt={project.name}
-                />
-              </div>
-              <h2>{project.title}</h2>
-            </div>;
+              if (index < 3 && index != 0) {
+                return (
+                  <div className="project" key={project.name}>
+                    <div className="image-wrapper bg-linear-to-b from-light-blue-t to-transparent">
+                      <img src={project.imgPath} alt={project.name} />
+                    </div>
+                    <h2>{project.title}</h2>
+                  </div>
+                );
               }
             })}
           </div>
         </div>
+        <FancyButton
+          className="md:w-80 md:h-16 w-60 h-12 anim-text"
+          id="button"
+          text="See more!"
+          targetId="education"
+        />
       </div>
     </section>
   );
