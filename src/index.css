@@ -113,7 +113,7 @@ section {
   }
 
   .grid-4-cols {
-    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-7;
   }
 
   .grid-12-cols {
@@ -275,7 +275,7 @@ section {
         @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
 
         img {
-          @apply w-full h-full object-cover rounded-xl absolute inset-0;
+          @apply w-full h-full object-cover rounded-xl inset-0;
         }
       }
 
@@ -295,7 +295,7 @@ section {
       @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
 
       .image-wrapper {
-        @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl xl:p-5 2xl:p-12 p-0;
+        @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl p-0;
       }
 
       img {
@@ -384,7 +384,7 @@ section {
   }
 
   .footer {
-    @apply my-10 md:mt-20 mt-10 text-white px-5 md:px-20 xl:px-20 flex items-center justify-center;
+    @apply my-10 md:mt-20 mt-10 text-white px-5 md:px-20 xl:px-20 flex items-center justify-center relative z-10 ;
 
     .arrow-wrapper {
       @apply size-10 md:size-12 right-10 top-1/2 
@@ -416,6 +416,33 @@ section {
 
       img {
         @apply inline-block size-5;
+      }
+    }
+  }
+
+  .opener-layout {
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+
+    .header-text {
+      @apply xl:pt-0 pt-10;
+    }
+  }
+
+  .projects-list-layout {
+    @apply w-full h-full min-h-[50vh] relative flex items-center justify-end xl:-mt-220 md:-mt-180 -mt-150 pr-30 z-10;
+  }
+  /* absolute xl:top-50 top-85 xl:right-0 right-10 z-10; */
+
+  .projects-list-container {
+    @apply w-[70%];
+
+    /* absolute right-10 */
+
+    .image-wrapper {
+      @apply w-70 h-70 relative cursor-pointer;
+
+      img {
+        @apply w-full h-full object-cover rounded-xl inset-0;
       }
     }
   }

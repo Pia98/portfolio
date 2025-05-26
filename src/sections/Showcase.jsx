@@ -3,10 +3,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { showcaseProjects } from "../constants";
 import { Link } from "react-router-dom";
+import { handleMouseMove } from "../constants/functions";
+import { useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Showcase = () => {
+  const cardRefs = useRef([]);
+
   useGSAP(() => {
     gsap.from(".first-project-wrapper", {
       xPercent: -100,
@@ -44,7 +48,12 @@ const Showcase = () => {
         <div className="showcase-layout">
           {/* LEFT */}
           <div className="first-project-wrapper">
-            <div className="image-wrapper">
+            <div
+              className="card card-border image-wrapper"
+              onMouseMove={handleMouseMove(0, cardRefs)}
+              ref={(el) => (cardRefs.current[0] = el)}
+            >
+              <div className="glow" />
               <img
                 src={showcaseProjects[0].imgPath}
                 alt={showcaseProjects[0].name}
@@ -63,7 +72,12 @@ const Showcase = () => {
               if (index < 3 && index != 0) {
                 return (
                   <div className="project" key={project.name}>
-                    <div className="image-wrapper bg-linear-to-b from-light-blue-t to-transparent">
+                    <div
+                      ref={(el) => (cardRefs.current[index] = el)}
+                      onMouseMove={handleMouseMove(index, cardRefs)}
+                      className="card card-border image-wrapper bg-linear-to-b from-light-blue-t to-transparent"
+                    >
+                      <div className="glow" />
                       <img src={project.imgPath} alt={project.name} />
                     </div>
                     <h2>{project.title}</h2>
@@ -73,16 +87,18 @@ const Showcase = () => {
             })}
           </div>
         </div>
-         <Link className='md:w-80 md:h-16 h-12 anim-text'
-             id='projects_btn'
-             to="/projects">
-                <div className="cta-link-button w-100 group">
-                    <p className="text">See more projects!</p>
-                    <div className="arrow-wrapper">
-                        <img src="/general/arrow-right.svg" alt="Arrow right"/>
-                    </div>
-                </div>
-             </Link>
+        <Link
+          className="md:w-80 md:h-16 h-12 anim-text"
+          id="projects_btn"
+          to="/projects"
+        >
+          <div className="cta-link-button w-100 group">
+            <p className="text">See more projects!</p>
+            <div className="arrow-wrapper">
+              <img src="/general/arrow-right.svg" alt="Arrow right" />
+            </div>
+          </div>
+        </Link>
       </div>
     </section>
   );

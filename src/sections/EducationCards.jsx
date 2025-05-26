@@ -1,4 +1,5 @@
 import { schools } from "../constants";
+import { handleMouseMove } from "../constants/functions";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -23,32 +24,16 @@ const EducationCards = () => {
       },
     });
   }, []);
-
-  const handleMouseMove = (index) => (e) => {
-    const card = cardRefs.current[index];
-    if (!card) return;
-
-    const rect = card.getBoundingClientRect();
-    const mouseX = e.clientX - rect.left - rect.width / 2;
-    const mouseY = e.clientY - rect.top - rect.height / 2;
-
-    //angle of the mouse to card center
-    let angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI);
-    //normalize angle to 0-360
-    angle = (angle + 360) % 360;
-
-    card.style.setProperty("--start", angle + 60);
-  };
+  
   return (
     <div className="w-full padding-x-lg" id="education">
       {/* <TitleHeader title="Education" sub="💻 My Studies" /> */}
       <div className="mx-auto grid-3-cols cards-section">
         {schools.map((school, index) => (
-          // TODO: add glowcard here instead own card... maybe glowcard needs a param classname
           <div
             key={school.title}
             ref={(el) => (cardRefs.current[index] = el)}
-            onMouseMove={handleMouseMove(index)}
+            onMouseMove={handleMouseMove(index, cardRefs)}
             className="card card-border rounded-xl p-8 flex flex-col gap-4"
           >
             <div className="glow" />
