@@ -32,7 +32,7 @@ const NavBar = () => {
 
         <nav className="desktop">
           <ul>
-            {navLinks.map(({ targetId, name }) => (
+            {navLinks.map(({ target, name }) => (
               <li key={name} className="group">
                 {/* <a
                   className="group cursor-pointer"
@@ -45,7 +45,7 @@ const NavBar = () => {
                 </a> */}
                 <Link
                   className="group cursor-pointer"
-                  to={'/#' + targetId}
+                  to={target}
                 >
                   <div className="inner">
                     <span>{name}</span>

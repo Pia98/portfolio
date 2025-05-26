@@ -13,10 +13,10 @@ export const intro_text =
   "I am a frontend web developer based in Augsburg, Germany. I am always eager to learn new technologies and improve my skills. I am looking for a team where I can contribute my knowledge and grow as a developer.";
 
 export const navLinks = [
-  { name: "Education", targetId: "education" },
-  { name: "Projects", targetId: "showcase" },
-  { name: "Experience", targetId: "experience" },
-  { name: "Skills", targetId: "skills" },
+  { name: "Education", target: "/#education" },
+  { name: "Projects", target: "/projects" },
+  { name: "Experience", target: "/#experience" },
+  { name: "Skills", target: "/#skills" },
 ];
 
 export const schools = [
@@ -52,49 +52,57 @@ export const showcaseProjects = [
     title: "Hero.Net: An interactive TV-Gameshow with Mixed Reality",
     short_desc: "hero.net is an interactive TV game show, in which two teams are challenged to a quest for the core codes of the internet. By finding those, they rescue the internet from the antagonist. The contestants are sent to a virtual environment. In order to win, they must complete tasks and challenges, as well as escape the traps the antagonist has laid out for them.",
     long_desc: "",
-    imgPath: "/projects/heroNet/opener.png"
+    imgPath: "/projects/heroNet/opener.png",
+    pathLink: "/projects/hero-net"
   }, {
     name: "Rarity",
     title: "Rarity: A website to showcase endangered species",
     short_desc: "",
     long_desc: "",
-    imgPath: "/projects/rarity/opener.png"
+    imgPath: "/projects/rarity/opener.png",
+    pathLink: "/projects/hero-net"
   }, {
     name: "The virtual art gallery",
     title: "The virtual art gallery",
     short_desc: "",
     long_desc: "",
-    imgPath: "/projects/vag/opener.png"
+    imgPath: "/projects/vag/opener.png",
+    pathLink: "/projects/hero-net"
   }, {
     name: "Artificial Bees?",
     title: "Artificial Bees: A 3D-Blender Scene",
     short_desc: "",
     long_desc: "",
-    imgPath: "/projects/vag/opener.png"
+    imgPath: "/projects/vag/opener.png",
+    pathLink: "/projects/hero-net"
   }, {
     name: "Lilo",
     title: "Lilo-App: Your digital best friend",
     short_desc: "",
     long_desc: "",
-    imgPath: "/projects/vag/opener.png"
+    imgPath: "/projects/vag/opener.png",
+    pathLink: "/projects/hero-net"
   }, {
     name: "Distances and Shot Sizes in Cinematic Virtual Reality",
     title: "Distances and Shot Sizes in Cinematic Virtual Reality",
     short_desc: "",
     long_desc: "",
-    imgPath: "/projects/vag/opener.png"
+    imgPath: "/projects/vag/opener.png",
+    pathLink: "/projects/hero-net"
   }, {
     name: "Eat What You Catch",
     title: "Eat What You Catch: A Mixed Reality Pizza Game",
     short_desc: "",
     long_desc: "",
-    imgPath: "/projects/vag/opener.png"
+    imgPath: "/projects/vag/opener.png",
+    pathLink: "/projects/hero-net"
   }, {
     name: "Rats Vs Science",
     title: "Rats Vs Science: A Sidescroller Jump 'n Run",
     short_desc: "",
     long_desc: "",
-    imgPath: "/projects/vag/opener.png"
+    imgPath: "/projects/vag/opener.png",
+    pathLink: "/projects/hero-net"
   }
 ]
 
