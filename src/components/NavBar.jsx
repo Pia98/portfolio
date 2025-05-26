@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../constants/index.js";
 import { scrollToSmooth } from "../constants/functions.js";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +20,7 @@ const NavBar = () => {
   return (
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
-        <a className="logo contact-btn flex-row items-center gap-1" onClick={(e) => scrollToSmooth(e, "opening")}>
+        <Link className="logo" to='/#opening'>
           <img
             alt="Pias logo"
             src="/projects/Logo.svg"
@@ -27,13 +28,13 @@ const NavBar = () => {
             height="48"
           />
           ia Carola Probst
-        </a>
+        </Link>
 
         <nav className="desktop">
           <ul>
             {navLinks.map(({ targetId, name }) => (
               <li key={name} className="group">
-                <a
+                {/* <a
                   className="group cursor-pointer"
                   onClick={(e) => scrollToSmooth(e, targetId)}
                 >
@@ -41,13 +42,22 @@ const NavBar = () => {
                     <span>{name}</span>
                     <span className="underline" />
                   </div>
-                </a>
+                </a> */}
+                <Link
+                  className="group cursor-pointer"
+                  to={'/#' + targetId}
+                >
+                  <div className="inner">
+                    <span>{name}</span>
+                    <span className="underline" />
+                  </div>
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <a onClick={(e) => scrollToSmooth(e, 'contact')} className="contact-btn group">
-          <div className="inner">
+        <a onClick={(e) => scrollToSmooth(e, 'contact')} className="">
+          <div className="contact-btn group">
             <span>Contact Me</span>
           </div>
         </a>

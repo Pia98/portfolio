@@ -108,12 +108,11 @@ const Contact = () => {
           </div>
 
           <button type="submit" disabled={loading}>
-            <div className="cta-button group">
-              <div className="bg-circle" />
+            <div className="cta-link-button group">
               <p className="text">{loading ? "Sending..." : "Send"}</p>
               <div className="arrow-wrapper">
                 {/* TODO: add send arrow */}
-                <img src="/general/arrow-down.svg" alt="arrow" />
+                <img src="/general/arrow-right.svg" alt="arrow" />
               </div>
             </div>
           </button>

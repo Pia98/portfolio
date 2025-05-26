@@ -5,3 +5,4 @@ Used packages:
  - three.js with drei, fiber and postprocessing
  - tailwindcss
  - typewriter-effect
+ - react-router-dom

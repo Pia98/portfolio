@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { showcaseProjects } from "../constants";
-import FancyButton from "../components/FancyButton.jsx";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,7 +40,7 @@ const Showcase = () => {
 
   return (
     <section id="showcase" className="app-showcase">
-      <div className="w-full">
+      <div className="w-full flex flex-col gap-10 items-center">
         <div className="showcase-layout">
           {/* LEFT */}
           <div className="first-project-wrapper">
@@ -73,12 +73,16 @@ const Showcase = () => {
             })}
           </div>
         </div>
-        <FancyButton
-          className="md:w-80 md:h-16 w-60 h-12 anim-text"
-          id="button"
-          text="See more!"
-          targetId="education"
-        />
+         <Link className='md:w-80 md:h-16 h-12 anim-text'
+             id='projects_btn'
+             to="/projects">
+                <div className="cta-link-button w-100 group">
+                    <p className="text">See more projects!</p>
+                    <div className="arrow-wrapper">
+                        <img src="/general/arrow-right.svg" alt="Arrow right"/>
+                    </div>
+                </div>
+             </Link>
       </div>
     </section>
   );

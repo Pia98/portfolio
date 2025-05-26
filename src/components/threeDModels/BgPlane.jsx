@@ -21,12 +21,12 @@ const BgPlane = () => {
     iResolution:  { value: new THREE.Vector3() },
   };
 
-  const shaderMaterial = new THREE.ShaderMaterial({
-    fragmentShader: fragmentShader,
-    uniforms: uniforms,
-  });
+  // const shaderMaterial = new THREE.ShaderMaterial({
+  //   fragmentShader: fragmentShader,
+  //   uniforms: uniforms,
+  // });
 
-  const circleShaderMaterial = new THREE.ShaderMaterial({
+  const shaderMaterial = new THREE.ShaderMaterial({
     vertexShader: vertexShader,
     fragmentShader: circleShader,
     uniforms: uniforms,
@@ -58,7 +58,7 @@ const BgPlane = () => {
   });
 
   return (
-    <mesh position={[0, 0, -1]} rotation={[0, 0, 0]} material={circleShaderMaterial} ref={meshRef}>
+    <mesh position={[0, 0, -1]} rotation={[0, 0, 0]} material={shaderMaterial} ref={meshRef}>
         <planeGeometry args={[20, 25]} />
     </mesh>
   )

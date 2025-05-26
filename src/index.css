@@ -52,6 +52,20 @@ section {
   --color-light-blue-t: #97bcff32;
   --color-light-blue-t-50: #97bcff50;
   --color-light-blue-t-100: #1e2659aa;
+
+  --animate-bounce-horizontal: bounce-horizontal 1s infinite;
+
+  @keyframes bounce-horizontal {
+    0%,
+    100% {
+      transform: translateX(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
 }
 
 @layer utilities {
@@ -147,7 +161,7 @@ section {
     }
 
     .logo {
-      @apply text-white text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
+      @apply text-white text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105 flex cursor-pointer flex-row items-center gap-1;
     }
 
     nav.desktop {
@@ -171,20 +185,28 @@ section {
     }
 
     .contact-btn {
-      @apply flex cursor-pointer;
+      @apply flex cursor-pointer px-5 py-2 rounded-lg bg-transparent border-2 border-white text-white overflow-hidden relative;
+    }
 
+    .contact-btn::after {
+      @apply bg-white rounded-lg content-[''] block h-full w-full absolute left-0 top-0 
+        translate-x-[-100%] rotate-[10deg] origin-top-left transition-all duration-500 will-change-transform z-[-1];
+    }
+
+    .contact-btn:hover::after {
+      @apply translate-x-0 rotate-[0deg];
+    }
+
+    .contact-btn:hover {
+      @apply border-2 border-transparent text-dark-blue transform scale-105 will-change-transform;
       .inner {
-        @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black transition-colors duration-300;
-
-        span {
-          @apply group-hover:text-white transition-colors duration-300;
-        }
+        @apply text-dark-blue;
       }
     }
   }
 
   .cta-button {
-    @apply px-4 py-4 rounded-lg bg-dark-blue flex justify-center items-center relative cursor-pointer overflow-hidden;
+    @apply px-4 py-4 rounded-full bg-dark-blue flex justify-center items-center relative cursor-pointer overflow-hidden;
 
     .bg-circle {
       @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
@@ -193,8 +215,7 @@ section {
     }
 
     .text {
-      @apply uppercase md:text-lg text-black transition-all duration-500
-        group-hover:text-white group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+      @apply uppercase md:text-lg text-black transition-all duration-500 group-hover:text-white -translate-x-5;
     }
 
     .arrow-wrapper {
@@ -204,6 +225,39 @@ section {
       img {
         @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
       }
+    }
+  }
+
+  .cta-link-button {
+    @apply px-4 py-4 rounded-full bg-dark-blue border-2 border-white rounded flex justify-center items-center relative cursor-pointer overflow-hidden;
+
+    .text {
+      @apply uppercase md:text-lg text-white;
+    }
+
+    .arrow-wrapper {
+      @apply size-10 rounded-full absolute right-10 top-1/2 
+        -translate-y-1/2 flex justify-center items-center overflow-hidden;
+
+      img {
+        @apply size-5 animate-bounce-horizontal text-white;
+      }
+    }
+  }
+
+  .cta-link-button::after {
+    @apply bg-white rounded-full content-[''] block h-full w-full absolute left-0 top-0 
+      translate-x-[-100%] rotate-[10deg] origin-top-left transition-all duration-500 will-change-transform z-[-1];
+  }
+
+  .cta-link-button:hover::after {
+    @apply translate-x-0 rotate-[0deg];
+  }
+
+  .cta-link-button:hover {
+    @apply border-2 border-transparent text-dark-blue transform scale-105 will-change-transform;
+    .text {
+      @apply text-dark-blue;
     }
   }
 

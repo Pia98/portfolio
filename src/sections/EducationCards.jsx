@@ -1,13 +1,12 @@
 import { schools } from "../constants";
-import TitleHeader from "../components/TitleHeader";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const FeatureCards = () => {
+const EducationCards = () => {
   const cardRefs = useRef([]);
 
   useGSAP(() => {
@@ -82,4 +81,4 @@ const FeatureCards = () => {
   );
 };
 
-export default FeatureCards;
+export default EducationCards;
