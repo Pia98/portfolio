@@ -53,56 +53,64 @@ export const showcaseProjects = [
     short_desc: "hero.net is an interactive TV game show, in which two teams are challenged to a quest for the core codes of the internet. By finding those, they rescue the internet from the antagonist. The contestants are sent to a virtual environment. In order to win, they must complete tasks and challenges, as well as escape the traps the antagonist has laid out for them.",
     long_desc: "",
     imgPath: "/projects/heroNet/opener.png",
-    pathLink: "/projects/hero-net"
+    pathLink: "/projects/hero-net",
+    published: true
   }, {
     name: "Rarity",
     title: "Rarity: A website to showcase endangered species",
     short_desc: "",
     long_desc: "",
     imgPath: "/projects/rarity/opener.png",
-    pathLink: "/projects/hero-net"
+    pathLink: "/projects/rarity",
+    published: true
   }, {
     name: "The virtual art gallery",
     title: "The virtual art gallery",
     short_desc: "",
     long_desc: "",
     imgPath: "/projects/vag/opener.png",
-    pathLink: "/projects/hero-net"
+    pathLink: "/projects/virtual-art-gallery",
+    published: true
   }, {
     name: "Artificial Bees?",
     title: "Artificial Bees: A 3D-Blender Scene",
     short_desc: "",
     long_desc: "",
     imgPath: "/projects/vag/opener.png",
-    pathLink: "/projects/hero-net"
+    pathLink: "/projects/artificial-bees",
+    published: false
   }, {
     name: "Lilo",
     title: "Lilo-App: Your digital best friend",
     short_desc: "",
     long_desc: "",
     imgPath: "/projects/vag/opener.png",
-    pathLink: "/projects/hero-net"
+    pathLink: "/projects/lilo",
+    published: false
   }, {
     name: "Distances and Shot Sizes in Cinematic Virtual Reality",
     title: "Distances and Shot Sizes in Cinematic Virtual Reality",
     short_desc: "",
     long_desc: "",
     imgPath: "/projects/vag/opener.png",
-    pathLink: "/projects/hero-net"
+    pathLink: "/projects/distances-in-cvr",
+    published: false
   }, {
     name: "Eat What You Catch",
     title: "Eat What You Catch: A Mixed Reality Pizza Game",
     short_desc: "",
     long_desc: "",
     imgPath: "/projects/vag/opener.png",
-    pathLink: "/projects/hero-net"
+    pathLink: "/projects/eat-what-you-catch",
+    published: false
   }, {
     name: "Rats Vs Science",
     title: "Rats Vs Science: A Sidescroller Jump 'n Run",
     short_desc: "",
     long_desc: "",
     imgPath: "/projects/vag/opener.png",
-    pathLink: "/projects/hero-net"
+    pathLink: "/projects/rats-vs-science",
+    published: false
   }
 ]
 
@@ -199,7 +207,7 @@ export const techStackIcons = [
     imgPath: "/logos/threejs.svg",
   },
   {
-    name: "C#",
+    name: "C# Blazor",
     modelPath: "/models/techIcons/csharp.glb",
     scale: 3,
     rotation: [0, 0.6, 0],

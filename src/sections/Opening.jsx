@@ -1,9 +1,10 @@
 import Typewriter from 'typewriter-effect';
 import { heading_texts, intro_text } from '../constants/index.js';
 import FancyButton from '../components/FancyButton.jsx';
-import ThreeDExperience from '../components/threeDModels/ThreeDExperience.jsx';
+import ThreeDLogoExperience from '../components/threeDModels/ThreeDLogoExperience.jsx';
 import { useGSAP } from '@gsap/react';
 import  gsap  from 'gsap';
+import { Logo } from '../components/threeDModels/Logo.jsx';
 
 const Opening = () => {
     useGSAP(() => {
@@ -45,7 +46,9 @@ const Opening = () => {
                 {/* right: 3d model */} 
                 <figure>
                     <div className='header-3d-layout'>
-                        <ThreeDExperience/>
+                        <ThreeDLogoExperience>
+                            <Logo/>
+                        </ThreeDLogoExperience>
                     </div>
                 </figure>
             </div>

@@ -1,7 +1,6 @@
 import TitleHeader from "../components/TitleHeader";
-import ThreeDSimpleExperience from "../components/threeDModels/ThreeDSimpleExperience.jsx";
 
-const PageOpener = ({ title, subtitle, id }) => {
+const PageOpener = ({ title, subtitle, id, children }) => {
   return (
     <section id={id} className="relative overflow-hidden">
       <div className="opener-layout">
@@ -12,12 +11,8 @@ const PageOpener = ({ title, subtitle, id }) => {
             </div>
           </div>
         </header>
-        {/* 3D scene bg */}
-        <figure>
-          <div className="header-3d-layout">
-            <ThreeDSimpleExperience />
-          </div>
-        </figure>
+        {/* eg. 3D scene bg */}
+        {children}
       </div>
     </section>
   );

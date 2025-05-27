@@ -1,10 +1,23 @@
 import PageOpener from "../../components/PageOpener.jsx";
+import ThreeDLogoExperience from "../../components/threeDModels/ThreeDLogoExperience.jsx";
+import { HeroNetLogo } from "../../components/threeDModels/HeroNetLogo.jsx";
 
 const HeroNet = () => {
   return (
     <>
-      <PageOpener title="Hero.Net" subtitle="An interactive Mixed-Reality Gameshow" id="opening"/>
-
+      <PageOpener
+        title="Hero.Net"
+        subtitle="An interactive Mixed-Reality Gameshow"
+        id="opening"
+      >
+        <figure>
+          <div className="header-3d-layout">
+            <ThreeDLogoExperience>
+              <HeroNetLogo />
+            </ThreeDLogoExperience>
+          </div>
+        </figure>
+      </PageOpener>
     </>
   );
 };

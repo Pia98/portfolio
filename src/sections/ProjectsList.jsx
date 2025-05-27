@@ -33,6 +33,7 @@ const ProjectsList = () => {
     <section id="projects-list" className="projects-list-layout">
       <div className="grid-4-cols projects-list-container">
         {showcaseProjects.map((project, index) => {
+          if(project.published)
           return (
             <Link
               className="project"

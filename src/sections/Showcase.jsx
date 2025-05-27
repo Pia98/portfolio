@@ -48,17 +48,18 @@ const Showcase = () => {
         <div className="showcase-layout">
           {/* LEFT */}
           <div className="first-project-wrapper">
-            <div
+            <Link
               className="card card-border image-wrapper"
               onMouseMove={handleMouseMove(0, cardRefs)}
               ref={(el) => (cardRefs.current[0] = el)}
+              to={showcaseProjects[0].pathLink}
             >
               <div className="glow" />
               <img
                 src={showcaseProjects[0].imgPath}
                 alt={showcaseProjects[0].name}
               />
-            </div>
+            </Link>
             <div className="text-content">
               <h2>{showcaseProjects[0].title}</h2>
               <p className="text-white md:text-xl">
@@ -67,21 +68,21 @@ const Showcase = () => {
             </div>
           </div>
           {/* RIGHT */}
-          <div className="project-list-wrapper overflow-hidden">
+          <div className="project-list-wrapper">
             {showcaseProjects.map((project, index) => {
               if (index < 3 && index != 0) {
                 return (
-                  <div className="project" key={project.name}>
+                  <Link className="project" key={project.name} to={project.pathLink}>
                     <div
                       ref={(el) => (cardRefs.current[index] = el)}
                       onMouseMove={handleMouseMove(index, cardRefs)}
-                      className="card card-border image-wrapper bg-linear-to-b from-light-blue-t to-transparent"
+                      className="card card-border image-wrapper"
                     >
                       <div className="glow" />
                       <img src={project.imgPath} alt={project.name} />
                     </div>
                     <h2>{project.title}</h2>
-                  </div>
+                  </Link>
                 );
               }
             })}

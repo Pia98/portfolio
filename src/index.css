@@ -272,10 +272,10 @@ section {
       @apply h-full flex flex-col justify-between xl:w-[60%];
 
       .image-wrapper {
-        @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
+        @apply xl:h-[70vh] md:h-[50vh] h-96 relative rounded-xl;
 
         img {
-          @apply w-full h-full object-cover rounded-xl inset-0;
+          @apply w-full h-full object-cover inset-0;
         }
       }
 
@@ -292,14 +292,14 @@ section {
       }
     }
     .project-list-wrapper {
-      @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%];
+      @apply flex md:flex-row flex-col xl:flex-col gap-10 xl:w-[40%] overflow-hidden;
 
       .image-wrapper {
-        @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl p-0;
+        @apply xl:h-[37vh] md:h-52 lg:h-72 h-64 relative rounded-xl cursor-pointer;
       }
 
       img {
-        @apply w-full h-full object-cover rounded-xl;
+        @apply w-full h-full object-cover inset-0;
       }
 
       h2 {
@@ -429,7 +429,7 @@ section {
   }
 
   .projects-list-layout {
-    @apply w-full h-full min-h-[50vh] relative flex items-center justify-end xl:-mt-220 md:-mt-180 -mt-150 pr-30 z-10;
+    @apply w-full h-full min-h-[50vh] absolute flex items-center justify-end 2xl:top-0 xl:top-0 md:top-100 top-220 pr-30 z-10;
   }
   /* absolute xl:top-50 top-85 xl:right-0 right-10 z-10; */
 
@@ -439,12 +439,16 @@ section {
     /* absolute right-10 */
 
     .image-wrapper {
-      @apply w-70 h-70 relative cursor-pointer;
+      @apply h-[25vh] relative cursor-pointer;
 
       img {
         @apply w-full h-full object-cover rounded-xl inset-0;
       }
     }
+  }
+
+  .spacer {
+    @apply relative w-full h-[165vh] md:h-[25vh] xl:h-0;
   }
 }
 
