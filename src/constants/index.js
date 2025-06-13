@@ -266,3 +266,19 @@ export const socialImgs = [
     url: "https://www.shadertoy.com/user/TalkToTheDuck"
   },
 ];
+
+export const heroNetData = {
+  title: "Hero.Net",
+  subtitle: "An interactive TV-Gameshow with Mixed Reality",
+  imgPath: "/projects/heroNet/opener.png",
+  description: "Hero.Net is an interactive TV game show, in which two teams are challenged to a quest for the core codes of the internet. By finding those, they rescue the internet from the antagonist. The contestants are sent to a virtual enviroment. In order to win, they must complete taskes and challenges, als well as escape the traps the antagonist has laid out for them. However, the teams can only succeed with the help of the audience. Viewers can interact with the show via the website „Hero.net“ and influence the course of the games. There are two hero teams, each consisting of two team members: a runner and a guide. The goal of the game is to collect the codes in the labyrinth before the time runs out and to be faster than the opposing team. The runner enters the virtual world of the game, navigating the corridors of VAONS with a HoloLens. The guide on the other hand is stationed in the control room, hence beeing physically separated from their team member. The guide can communicate with their partner via mobile phone. The guide‘s task is to assist their teammate by describing the correct path through the labyrinth. In most cases, the guide receives a clue, such as a floor plan, passwords for locked doors, etc. This master‘s thesis explores wether viewer interactions can be innovatively designed and if the medium of Mixed Reality can assist in the process. Additionally, it seeks to explore how a website can contribute to the design of the viewer-side interaction component as an input medium.",
+  date: "2022 - 2024"
+};
+
+export const rarityData = {
+  title: "Rarity",
+  subtitle: "Rarity: A website to showcase endangered species",
+  imgPath: "/projects/rarity/opener.png",
+  description:"RARITY is a project focusing on a topic that concerns us all: The soon demise of many species we have taken for granted for the past decades. While numbers of the most endangered species on this planet quickly decline, we have decided it is time to take action and help saving the wonderful diversity of the animal world. This project by students of the Hochschule Augsburg aims to reach this goal by letting users playfully interact with endangered species and hence raise awareness and empathy. We hope that through joyful interaction like this, we can protect what makes this planet so beautiful.",
+  date: "2023"
+};

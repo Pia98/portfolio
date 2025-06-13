@@ -1,8 +1,11 @@
 import PageOpener from "../../components/PageOpener.jsx";
 import ThreeDLogoExperience from "../../components/threeDModels/ThreeDLogoExperience.jsx";
 import { HeroNetLogo } from "../../components/threeDModels/HeroNetLogo.jsx";
+import { heroNetData } from "../../constants";
+import ImageText from "../../components/ImageText.jsx";
 
 const HeroNet = () => {
+
   return (
     <>
       <PageOpener
@@ -18,6 +21,8 @@ const HeroNet = () => {
           </div>
         </figure>
       </PageOpener>
+      <ImageText data={heroNetData}/>
+      
     </>
   );
 };
