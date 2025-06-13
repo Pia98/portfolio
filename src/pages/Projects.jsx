@@ -35,7 +35,7 @@ const Projects = () => {
       </PageOpener>
       <ProjectsList />
       {/* placeholder for list so that the footer does not appear behind */}
-      <div class="spacer"></div>
+      <div className="spacer"></div>
     </div>
   );
 };

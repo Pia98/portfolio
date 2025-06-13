@@ -43,7 +43,7 @@ const ProjectsList = () => {
               <div
                 ref={(el) => (cardRefs.current[index] = el)}
                 onMouseMove={handleMouseMove(index, cardRefs)}
-                className="card card-border image-wrapper"
+                className="card image-wrapper"
               >
                 <div className="glow" />
                 <img src={project.imgPath} alt={project.name} />
